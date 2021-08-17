@@ -1,0 +1,17 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://eurekaUser:eurekaPass@discovery-service:3007/eureka/
+  instance:
+    prefer-ip-address: true
+server:
+  port: 3007
+spring:
+  application:
+    name: discovery-service
+  security:
+    user:
+      name: eurekaUser
+      password: eurekaPass
